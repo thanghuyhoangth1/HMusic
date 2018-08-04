@@ -1,4 +1,4 @@
-package hmusic.music.hoang.com.hmusic;
+package hmusic.music.hoang.com.hmusic.view.offline;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,15 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public abstract class BaseFragment extends Fragment {
+import hmusic.music.hoang.com.hmusic.BaseFragment;
+import hmusic.music.hoang.com.hmusic.R;
+
+public class OfflineFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = initDataBinding();
+        View rootView = inflater.inflate(R.layout.fragment_music, container, false);
         return rootView;
     }
-
-    protected abstract View initDataBinding();
-
-
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">HMusic</string>
+    <string name="title_online">Online</string>
+    <string name="title_offline">Cá nhân</string>
 </resources>
