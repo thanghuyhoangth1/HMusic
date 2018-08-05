@@ -9,12 +9,11 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(getView());
+        initDataBinding();
         initComps(savedInstanceState);
     }
 
+    protected abstract void initDataBinding();
+
     public abstract void initComps(Bundle saveInstancsState);
-
-    public abstract int getView();
-
 }
